@@ -85,7 +85,7 @@ export const works: Work[] = [
     discipline: ACTIVATION,
     year: '2026',
     tagline: {
-      en: 'Cif announces sneakers that look as good as new at Rock in Rio.',
+      en: 'Cif promotes used sneakers as if they were brand new at Rock in Rio.',
       pt: 'Cif anuncia tênis usados como se fossem novos no Rock in Rio.',
     },
     problem: {

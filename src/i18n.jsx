@@ -8,12 +8,12 @@ export const dict = {
   en: {
     nav: { work: 'Work', about: 'About', contact: 'Contact', menu: 'Menu', close: 'Close' },
     hero: {
-      eyebrow: 'Felipe Mello Padula',
+      eyebrow: 'Portfolio 2026',
       line1: 'Creative',
       line2: 'Art Director',
       lead: 'I make',
       words: ['campaigns.', 'films.', 'AI productions.', 'brands.', 'ideas that travel.'],
-      location: 'São Paulo · Working worldwide',
+      location: 'São Paulo-SP / Brazil',
       scroll: 'Selected work',
     },
     list: { view: 'View case' },
@@ -75,12 +75,12 @@ export const dict = {
   pt: {
     nav: { work: 'Trabalhos', about: 'Sobre', contact: 'Contato', menu: 'Menu', close: 'Fechar' },
     hero: {
-      eyebrow: 'Felipe Mello Padula',
+      eyebrow: 'Portfolio 2026',
       line1: 'Creative',
       line2: 'Art Director',
       lead: 'Eu crio',
       words: ['campanhas.', 'filmes.', 'produções com IA.', 'marcas.', 'ideias que viajam.'],
-      location: 'São Paulo · Atendendo o mundo todo',
+      location: 'São Paulo-SP / Brasil',
       scroll: 'Trabalhos selecionados',
     },
     list: { view: 'Ver case' },
