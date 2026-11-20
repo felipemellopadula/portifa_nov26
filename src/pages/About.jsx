@@ -28,9 +28,7 @@ export default function About() {
           </Reveal>
           <div>
             <Reveal className="about-text">
-              <p>{a.p1}</p>
-              <p>{a.p2}</p>
-              <p>{a.p3}</p>
+              {a.bio.map((p, i) => <p key={i}>{p}</p>)}
               <div style={{ margin: '40px 0 72px' }}>
                 <Link to="/contact" className="btn solid">{a.cta} →</Link>
               </div>

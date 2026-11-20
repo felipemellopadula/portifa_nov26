@@ -38,7 +38,6 @@ export default function Hero() {
     <section className="hero">
       <span className="hero-eyebrow mono">{t.hero.eyebrow}</span>
       <h1 className="sr-only">{`${t.hero.line1} ${t.hero.line2}`}</h1>
-      {/* Para voltar ao GIF, troque o <video> abaixo por este <img>:
       <img
         className="hero-art"
         src={`${import.meta.env.BASE_URL}videos/${encodeURIComponent('Composição.gif')}`}
@@ -46,20 +45,6 @@ export default function Hero() {
         width="400"
         height="533"
         fetchpriority="high"
-      />
-      */}
-      <video
-        className="hero-art"
-        src={`${import.meta.env.BASE_URL}videos/hero-art.mp4`}
-        poster={`${import.meta.env.BASE_URL}videos/hero-art-poster.jpg`}
-        width="720"
-        height="960"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        aria-label={`Felipe Mello Padula · ${t.hero.line1} ${t.hero.line2}`}
       />
       <p className="hero-lead">
         <span>{t.hero.lead}</span>

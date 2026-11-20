@@ -1,10 +1,20 @@
 import { useEffect } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useLang } from '../i18n'
 import { site, waLink } from '../data/site'
 
 export default function Menu({ open, onClose }) {
   const { lang, toggle, t } = useLang()
+  const { pathname, hash } = useLocation()
+
+  // About lives on the home now. If we're already at /#about the URL doesn't change,
+  // so App won't scroll on its own: do it here once the menu has closed.
+  const goAbout = () => {
+    onClose()
+    if (pathname === '/' && hash === '#about') {
+      setTimeout(() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }), 80)
+    }
+  }
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -27,7 +37,7 @@ export default function Menu({ open, onClose }) {
       </div>
       <nav>
         <NavLink to="/" end onClick={onClose}><span>{t.nav.work}</span></NavLink>
-        <NavLink to="/about" onClick={onClose}><span>{t.nav.about}</span></NavLink>
+        <Link to="/#about" onClick={goAbout}><span>{t.nav.about}</span></Link>
         <NavLink to="/contact" onClick={onClose}><span>{t.nav.contact}</span></NavLink>
       </nav>
       <div className="menu-foot mono">
